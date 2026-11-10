@@ -1,0 +1,11 @@
+# A made-up 500 kWp rooftop plant used by the examples and the tests.
+[site]
+name = "demo-rooftop"
+latitude = 48.2
+longitude = 11.6
+capacity_kw = 500.0
+ac_limit_kw = 400.0
+tilt = 25.0
+azimuth = 180.0
+temp_coeff = -0.0038
+system_losses = 0.14

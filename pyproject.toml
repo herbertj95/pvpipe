@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pvpipe"
+version = "0.1.0"
+description = "Day-ahead PV power forecasting pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.24", "pandas>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+pvpipe = "pvpipe.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pvpipe*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
